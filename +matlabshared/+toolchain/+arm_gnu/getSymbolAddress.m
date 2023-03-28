@@ -7,7 +7,7 @@ function addr = getSymbolAddress(application, symbols)
 % Copyright 2015-2017 The MathWorks, Inc.
 
 [applicationPath, applicationName] = fileparts(application);
-rootDir = matlabshared.toolchain.gnu_gcc_arm.getGnuArmToolsDir();
+rootDir = matlabshared.toolchain.arm_gnu.getArmGnuToolsDir();
 objDump = fullfile(rootDir, 'bin', 'arm-none-eabi-objdump.exe');
 symbolTable = fullfile(applicationPath, [applicationName, '.tbl']);
 cmd = ['"' objDump '" -t "' application '" > "' symbolTable '"'];

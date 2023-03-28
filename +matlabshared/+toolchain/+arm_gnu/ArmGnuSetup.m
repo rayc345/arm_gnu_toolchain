@@ -4,7 +4,7 @@ function ArmGnuSetup()
 
 %   Copyright 2016 The MathWorks, Inc.
 
-rootDir = matlabshared.toolchain.gnu_gcc_arm.getGnuArmToolsDir();
+rootDir = matlabshared.toolchain.arm_gnu.getArmGnuToolsDir();
 createToolchainPathMakefile('MW_ARM_GNU_TOOLS_PATH', rootDir);
 
 end
