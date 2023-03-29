@@ -1,5 +1,5 @@
-function installDir = getGnuArmToolsDir
-%GETGNUARMTOOLSDIR Get the installation folder of the GNU Tools for ARM Embedded Processors tool-chain
+function installDir = getArmGnuToolsDir
+%GETARMGNUTOOLSDIR Get the installation folder of the GNU Tools for ARM Embedded Processors tool-chain
 
 % Copyright 2015-2020 The MathWorks, Inc.
 
